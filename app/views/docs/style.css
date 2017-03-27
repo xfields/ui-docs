@@ -1,0 +1,53 @@
+@import '../../theme/default/variable.css';
+
+.docs {
+  & h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: $dark-primary-color;
+  }
+}
+
+.doc-list {
+  overflow: hidden;
+  padding-top: 100px;
+
+  & li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+  }
+}
+
+.slogan {
+  text-align: center;
+}
+
+.item {
+  height: 100%;
+  cursor: pointer;
+}
+
+.add .item {
+  border: 1px dashed $secondary-text-color;
+  position: relative;
+
+  & i {
+    font-size: 75px;
+    color: $secondary-text-color;
+    position: absolute;
+    top: calc((200px - 75px) / 2);
+    left: calc((200px - 75px) / 2);
+  }
+}
+
+@each $bg, $fg, $i in
+($dark-primary-color, $accent-color, $default-primary-color, $light-primary-color),
+($text-primary-color, $text-primary-color, $text-primary-color, $primary-text-color),
+(0, 1, 2, 3) {
+  .color-$(i) {
+    background: $(bg);
+    color: $(fg);
+  }
+}

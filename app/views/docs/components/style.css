@@ -1,0 +1,9 @@
+.item {
+  text-align: center;
+}
+
+.item p:first-child {
+  font-size: 18px;
+  padding: 50px 0 20px;
+  text-align:
+}

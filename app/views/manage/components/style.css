@@ -1,0 +1,12 @@
+.indicator {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  box-shadow: 0px 0px 1px 0px #888;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.operation {
+  margin-bottom: 10px;
+}

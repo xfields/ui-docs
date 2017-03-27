@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UI-Docs</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="lib/bowser.min.js"></script>
+    <script type="text/javascript">
+      var available = (bowser.msie && bowser.version >= 10) || bowser.msedge || bowser.webkit || bowser.firefox
+      if (!available) {
+        alert('请使用IE10+，或Chrome、Firefox等高级浏览器。')
+      }
+    </script>
+    <div id="app"></div>
+  </body>
+</html>
