@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.add {
+  display: none;
+}
+
 .add .item {
   border: 1px dashed $secondary-text-color;
   position: relative;

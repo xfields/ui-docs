@@ -20,10 +20,12 @@ class Doc extends Component {
       link: `/docs/${doc.id}`
     }
 
-    let operation = [{
-      name: '管理',
-      link: `/manage/${doc.id}`
-    }]
+    let operation = [
+      // {
+      //   name: '管理',
+      //   link: `/manage/${doc.id}`
+      // }
+    ]
 
     return (
       <div>
