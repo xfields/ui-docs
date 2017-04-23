@@ -84,7 +84,7 @@ config.globals = {
   '__DEBUG__'    : config.env === 'development' && !argv.no_debug,
   '__DEBUG_NEW_WINDOW__' : !!argv.nw,
   '__BASENAME__' : JSON.stringify(process.env.BASENAME || ''),
-  '__SERVE_HOST__'   : '45.62.97.159:3301'
+  '__SERVER_HOST__'   : '45.62.97.159:3301'
 }
 
 // ------------------------------------
