@@ -2,7 +2,7 @@ import REST from 'utils/rest'
 
 const URL = {
   // doc: 'http://192.168.254.27:3401'
-  doc: 'http://119.29.98.219:3401'
+  doc: __SERVER_HOST__
 }
 
 let dp = new REST(URL.doc, 'api')
