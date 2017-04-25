@@ -7,7 +7,7 @@
     <title>UI-Docs</title>
   </head>
   <body>
-    <script type="text/javascript" src="lib/bowser.min.js"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath %>lib/bowser.min.js"></script>
     <script type="text/javascript">
       var available = (bowser.msie && bowser.version >= 10) || bowser.msedge || bowser.webkit || bowser.firefox
       if (!available) {

@@ -36,6 +36,7 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       title: 'Web-IM',
       template: paths.client('index.html'),
+      publicPath: config.globals.__PROD__ ? config.compiler_public_path : '',
       hash: false,
       favicon: paths.client('static/logo.png'),
       filename: 'index.html',
