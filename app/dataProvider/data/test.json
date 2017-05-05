@@ -1,0 +1,43 @@
+{
+  "id": 2,
+  "name": "TEST视觉风格指南",
+  "description": "FOR TEST",
+  "colors": [
+    {
+      "key": "颜色1",
+      "value": "#333"
+    }, {
+      "key": "颜色2",
+      "value": "#666"
+    }, {
+      "key": "颜色3",
+      "value": "#0090ff"
+    }, {
+      "key": "颜色4",
+      "value": "#999"
+    }, {
+      "key": "颜色5",
+      "value": "#ccc"
+    }, {
+      "key": "颜色6",
+      "value": "#9bd6ff"
+    }
+  ],
+  "font-size": [
+    {
+      "key": "文字1",
+      "value": "36",
+      "bold": 1
+    }, {
+      "key": "文字2",
+      "value": "34",
+      "bold": 1
+    }, {
+      "key": "文字4",
+      "value": "34"
+    }, {
+      "key": "文字5",
+      "value": "28"
+    }
+  ]
+}

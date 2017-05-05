@@ -1,13 +1,25 @@
-import REST from 'utils/rest'
+import uidocs from './data'
 
-const URL = {
-  doc: 'http://119.29.98.219:3301'
+let dp = {
+  docs: {
+    get: getDocs
+  }
 }
 
-let dp = new REST(URL.doc, 'api')
+function getDocs(id) {
+  let data
+  if (!id) {
+    data = Object.keys(uidocs).map(key => ({
+      ...uidocs[key],
+      id: key
+    }))
+  } else {
+    data = {
+      ...uidocs[id],
+      id: id
+    }
+  }
+  return {data}
+}
 
-dp.docs = dp.endpoint('docs')
-dp.docs.doc = dp.docs.endpoint('{docId}')
-dp.docs.doc.color = dp.docs.doc.endpoint('color')
-dp.docs.doc.font = dp.docs.doc.endpoint('font')
 export default dp

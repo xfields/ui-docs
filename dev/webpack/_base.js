@@ -37,7 +37,6 @@ const webpackConfig = {
       title: 'Web-IM',
       template: paths.client('index.html'),
       hash: false,
-      favicon: paths.client('static/logo.png'),
       filename: 'index.html',
       inject: 'body',
       minify: {

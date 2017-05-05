@@ -48,7 +48,7 @@ class Docs extends Component {
                 </li>
               ))
             }
-            <li className={style.add}>
+            <li className={style.add} style={{display: 'none'}}>
               <div className={style.item} onClick={::this.handleAddUIDoc}>
                 <Icon type="plus" />
               </div>

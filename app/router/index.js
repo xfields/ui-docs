@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { hashHistory, Router, Route, IndexRoute } from 'react-router'
+import { hashHistory, Router, Route, IndexRedirect } from 'react-router'
 import Home from 'views/home'
 import Docs from 'views/docs'
 import Doc from 'views/doc'
@@ -7,7 +7,8 @@ import Management from 'views/manage'
 
 const routes = (
   <Route path="/" component={Home}>
-    <IndexRoute component={Docs} />
+    <IndexRedirect to="/docs" />
+    <Route path="docs" component={Docs} />
     <Route path="docs/:id" component={Doc} />
     <Route path="manage/:id" component={Management} />
   </Route>
